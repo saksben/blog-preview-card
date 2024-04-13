@@ -15,6 +15,94 @@
     <title>Frontend Mentor | Blog preview card</title>
 
     <style>
+      @font-face {
+        font-family: 'Figtree';
+        src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+      }
+      
+      @media screen and (max-width: 375px) {
+
+      }
+
+      body {
+        margin: 0;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #f4d04e;
+        font-family: "Figtree"
+      }
+
+      .card-body {
+        background-color: #FFFFFF;
+        width: 384px;
+        height: 522px;
+        border: solid black;
+        border-radius: 20px;
+        box-shadow: 8px 8px 0 #000000;
+      }
+
+      .illustration-article img {
+        border-radius: 10px;
+        margin-top: 24px;
+        margin-left: 24px;
+      }
+
+      .card-info {
+        margin-top: 24px;
+      }
+
+      .category {
+        margin-left: 24px;
+        width: 82px;
+        height: 29px;
+        background-color: #f4d04e;
+        border-radius: 4px;
+        font-weight: 800;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .pub-date {
+        font-size: 14px;
+        font-weight: 500;
+        margin-left: 24px;
+      }
+
+      .card-body h1 {
+        font-size: 24px;
+        font-weight: 800;
+        margin-left: 24px;
+      }
+
+      .description {
+        font-size: 16px;
+        color: #7F7F7F;
+        font-weight: 500;
+        margin-left: 24px;
+      }
+
+      .profile {
+        display: flex;
+        font-weight: 800;
+        font-size: 14px;
+        margin-left: 24px;
+        margin-top: 24px;
+        display: flex;
+        align-items: center;
+      }
+
+      .profile img {
+        height: 32px;
+        width: 32px;
+        margin-right: 12px;
+      }
+
       .attribution {
         position: absolute;
         font-size: 11px;
@@ -25,22 +113,38 @@
       }
     </style>
   </head>
-  <body>
-    <p>Learning</p>
-    <p>Published 21 Dec 2023</p>
-    <h1>HTML & CSS foundations</h1>
-    <p>
-      These languages are the backbone of every website, defining structure,
-      content, and presentation.
-    </p>
-    <p>Greg Hooper</p>
 
-    <div class="attribution">
+  <body>
+    <div class="card-body">
+      <div class="illustration-article">
+        <img
+          src="./assets/images/illustration-article.svg"
+          alt="Article illustration"
+        />
+      </div>
+      <div class="card-info">
+        <div class="category">
+          <p>Learning</p>
+        </div>
+        <p class="pub-date">Published 21 Dec 2023</p>
+        <h1>HTML & CSS foundations</h1>
+        <p class="description">
+          These languages are the backbone of every website, defining structure,
+          content, and presentation.
+        </p>
+      </div>
+      <div class="profile">
+        <img src="./assets/images/image-avatar.webp" alt="Avatar image" />
+        <p>Greg Hooper</p>
+      </div>
+    </div>
+
+    <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by
       <a href="https://www.frontendmentor.io/profile/saksben">Benjamin Saks</a>.
-    </div>
+    </div> -->
   </body>
 </html>
